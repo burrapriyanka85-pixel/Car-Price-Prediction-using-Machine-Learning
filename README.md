@@ -1,120 +1,90 @@
-# Car-Price-Prediction-using-Machine-Learning
-🚗 Machine Learning based system for predicting real-world used car prices using regression modeling, feature engineering, and hyperparameter tuning. Includes EDA, ML pipelines, model evaluation and deployment-ready saved model.
+🚗 Car Price Prediction using Machine Learning
+
+A complete end-to-end Machine Learning project for predicting real-world used-car prices using regression models, feature engineering, model evaluation, and deployment-ready pipelines. This includes full EDA, preprocessing, ML pipelines, hyperparameter tuning, and trained model export.
 
 📌 Overview
 
-This project builds a Machine Learning regression model that predicts used car prices based on real-world car listing data such as brand, model, year, engine size, fuel type, transmission, condition, mileage, and more.
-
-The goal is to help understand how different car specifications influence market price and to build a predictive model that can be used in real-world automotive pricing systems.
+This project develops a predictive ML system that estimates used-car market prices based on historical listing attributes such as brand, model, year, engine size, fuel type, transmission, mileage and condition.
+The aim is to understand how vehicle characteristics affect resale value and to automate price estimation for automotive platforms, dealers, and consumers.
 
 🧠 Problem Statement
 
-The used-car market heavily depends on expert judgement for pricing decisions, which often leads to inconsistent valuation. Buyers and sellers face difficulty estimating fair prices due to lack of transparency and manual pricing.
-
-This project aims to develop an automated price estimation ML system that uses historical car listings and vehicle features to accurately predict market prices using regression analysis.
+Car resale pricing is often subjective and inconsistent, depending on manual expert evaluation and personal judgement. This leads to price variation, negotiation challenges, and lack of transparency for buyers and sellers.
+This project automates the valuation process using Machine Learning, enabling fair, data-driven, and consistent pricing based on historical market listings.
 
 🎯 Objectives
 
-Perform data analysis on used car listings
-
-Identify key features affecting car resale price
-
-Build machine learning regression models
-
-Compare model performance
-
-Predict car price using vehicle specifications
-
-Perform hyperparameter tuning for improved accuracy
-
-Evaluate model performance using regression metrics
+Perform exploratory data analysis
+Identify price-influencing factors
+Implement regression models
+Build preprocessing + ML pipelines
+Compare multiple models
+Tune hyperparameters
+Evaluate performance using metrics
+Export final trained model for reuse
 
 📊 Dataset
 
-Car Price Prediction Dataset (2025) – Kaggle
+Car Price Prediction Dataset (2025) — Kaggle
 Author: Ali Hussain
-Dataset Link: https://www.kaggle.com/datasets/aliiihussain/car-price-prediction
+https://www.kaggle.com/datasets/aliiihussain/car-price-prediction
 
-Features include:
-Column	Description
-Brand	Car manufacturer
-Model	Car model name
-Year	Manufacturing year
-Engine Size	Engine capacity
-Fuel Type	Petrol/Diesel/Electric/Hybrid
-Transmission	Manual/Automatic
-Mileage	Distance driven
-Condition	New, Used, etc
-Price	Target variable
+Main attributes
+
+Brand
+Model
+Year
+Engine Size
+Fuel Type
+Transmission
+Mileage
+Condition
+Price (target)
+
 🛠 Technologies Used
 
 Python
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
+Pandas, NumPy
+Matplotlib, Seaborn
 Scikit-learn
-
 Joblib
-
 Jupyter Notebook
 
-🔍 Steps Performed
+🔍 Machine Learning Pipeline
 
-✔ Data Loading
-✔ Data Cleaning
-✔ Handling Missing Values
+✔ Data loading
+✔ Data cleaning
+✔ Missing-value handling
 ✔ Exploratory Data Analysis
-✔ Feature Engineering
-✔ Preprocessing using ColumnTransformer
-✔ ML Pipeline Setup
-✔ Train/Test Split
-✔ Model Training
-✔ Hyperparameter Tuning
-✔ Evaluation using
-
-MAE
-
-RMSE
-
-R²
-✔ Saving Trained Model
-✔ Prediction on New Data
+✔ Statistical insights
+✔ Feature engineering
+✔ Categorical encoding
+✔ Scaling numeric features
+✔ Train/Test split
+✔ Regression modeling
+✔ Hyperparameter tuning
+✔ Model evaluation
+✔ Saving final model
 
 🤖 Models Implemented
 
 Linear Regression
-
 Random Forest Regressor
-
 Gradient Boosting Regressor
-
-XGBoost (optional)
+XGBoost
 
 🧪 Evaluation Metrics
 
-Used regression metrics:
-
-Mean Absolute Error (MAE)
-
-Mean Squared Error (MSE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score
+MAE
+RMSE
+R² score
 
 📌 Feature Engineering
 
-Created additional features:
-
 Car Age
-
 High Mileage indicator
 
-📎 Folder Structure
+📁 Folder Structure
 car_price_prediction/
 │
 ├── car_price_prediction.ipynb
@@ -123,37 +93,30 @@ car_price_prediction/
 │     └── car_price_prediction_.csv
 └── README.md
 
-📦 How to Run
-Clone Repository
+🚀 How to Run
+
+Clone
 git clone <repository-link>
 cd car_price_prediction
-
-Install dependencies
+Install
 pip install -r requirements.txt
-
-Run notebook
+Run
 jupyter notebook car_price_prediction.ipynb
 
 📌 Results
 
-Mileage, Engine Size, Car Age, Brand, Condition highly influence car pricing.
+Mileage, Engine Size, Car Age and Brand strongly impact price
+RandomForestRegressor performed best after tuning
+Trained model exported for deployment
 
-Tuned RandomForestRegressor gives best performing estimation model.
+🔥 Real-World Use Cases
 
-Model saved for deployment using joblib.
+OLX, Cars24 selling platforms
+Dealership price estimation
+Insurance price evaluation
+Used-car valuation tools
+Auto-loan risk analytics
 
-🚀 Possible Real-World Applications
-
-Used-car marketplaces (OLX, Cars24)
-
-Dealership pricing
-
-Insurance valuation
-
-Financial auto-loans
-
-Online pricing calculators
-
-📍 Author
+👩‍💻 Author
 
 Priyanka Burra
